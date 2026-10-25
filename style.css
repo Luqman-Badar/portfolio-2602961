@@ -1,5 +1,90 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Baloo+2:wght@400..800&family=Baloo+Bhai+2:wght@400..800&display=swap');
+body{
+    font-family: "Baloo Bhai 2", sans-serif;
+}
 h2{
     color: orange;
     text-align: center;
+    background-color: rgb(46, 41, 41);
+    color: white;
 
+}
+div{
+    border: 2px solid black;
+    background-color: rgb(37, 34, 34);
+    color: white;
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+    height: 30vh;
+}
+ul li{
+   list-style: none;
+}
+div:hover{
+    background-color: black;
+    font-size: 18px;
+} */
+ @import url('https://googleapis.com');
+
+/* Global settings to prevent horizontal scrolling on mobile devices */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Baloo Bhai 2", sans-serif;
+    padding: 15px;
+    background-color: #1a1a1a; /* Subtle background color so content stands out */
+}
+
+h2 {
+    text-align: center;
+    background-color: rgb(46, 41, 41);
+    color: orange;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+div {
+    border: 2px solid black;
+    background-color: rgb(37, 34, 34);
+    color: white;
+    border-radius: 10px;
+    margin: 0 auto 20px auto; /* Centers the boxes and creates space below them */
+    text-align: center;
+    
+    /* Using min-height instead of fixed height fixes mobile text overflow */
+    min-height: 30vh; 
+    width: 100%;
+    max-width: 800px; /* Prevents boxes from getting too wide on large screens */
+    padding: 20px; /* Adds space inside the boxes so text doesn't touch the borders */
+}
+
+/* Spaces out headings inside the divs */
+div h3, div h4 {
+    margin-bottom: 10px;
+    color: orange; /* Brought back your orange accent color context */
+}
+
+ul {
+    display: inline-block;
+    text-align: left; /* Aligns list items cleanly inside the centered container */
+}
+
+ul li {
+   list-style: none;
+   margin-bottom: 5px;
+}
+
+div:hover {
+    background-color: black;
+    font-size: 18px;
+    transition: all 0.2s ease-in-out; /* Smooths out the text size transition */
+}
+h2:hover{
+    background-color: black;
 }
